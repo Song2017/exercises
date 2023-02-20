@@ -1,0 +1,26 @@
+# pip3.9 install -i https://pypi.douban.com/simple/ uvicorn==0.12.1
+fastapi==0.65.2
+redis==3.5.3
+ipython==7.18.1
+Jinja2==2.11.3
+pytest==6.1.0
+requests==2.24.0
+uvicorn==0.12.1
+python-multipart==0.0.5
+xmltodict==0.12.0
+flake8==3.9.2
+beautifulsoup4==4.10.0
+python-dotenv==0.19.2
+lxml==4.6.4
+structlog==21.5.0
+opentelemetry-sdk==1.9.1
+opentelemetry-exporter-jaeger==1.9.1
+markupsafe==2.0.1
+aliyun-python-sdk-core-v3==2.13.33
+aliyun-python-sdk-alimt==3.1.1
+jieba==0.42.1
+numpy==1.22.3
+pandas==1.4.2
+func-timeout==4.3.5
+html2image==2.0.1
+pymupdf==1.20.2

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <table id="tab1" border="1" style="display:none">
+        <tr>
+            <td>11.1</td>
+            <td>11.2</td>
+        </tr>
+        <tr>
+            <td>12.1</td>
+            <td class="ocuppy">12.2</td>
+        </tr>
+    </table>
+    <table id="tab2" border="1">
+        <tr>
+            <td>21.1</td>
+            <td>21.2</td>
+        </tr>
+        <tr>
+            <td>22.1</td>
+            <td class="ocuppy">22.2</td>
+        </tr>
+    </table>
+    <div id="divSample"> 
+        <span> how show this in 2.2</span>
+        <button value="test button"></button>
+        <input value="test input">
+    </div>
+    <input type="button" onclick="buttonClick()" value="click me" />
+</body>
+<script>
+    var tab1 = document.querySelector('#tab1');
+    var tab2 = document.querySelector('#tab2');
+    var divSample = document.querySelector('#divSample');
+
+    function buttonClick() {
+        var tab1Style = tab1.style.display;
+        if (tab1Style == "none") {
+            tab1.style.display = "block";
+            tab2.style.display = "none";
+
+            tab1.querySelector('.ocuppy').innerHTML = divSample.innerHTML
+        } else {
+            tab1.style.display = "none";
+            tab2.style.display = "block";
+            tab2.querySelector('.ocuppy').innerHTML = divSample.innerHTML
+        }
+    }
+</script>
+
+</html>

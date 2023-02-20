@@ -1,0 +1,6 @@
+.idea
+.DS_Store
+*.iml
+venv
+.terraform
+*egg-info
