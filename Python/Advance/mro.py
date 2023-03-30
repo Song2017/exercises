@@ -4,6 +4,9 @@
 
 
 class D:
+    def __init__(self) -> None:
+        return
+
     def test_message(self):
         print("Dddddd")
 
@@ -17,7 +20,7 @@ class F(D, E):
     def test_message(self):
         print("F")
         # E.test_message(self)
-        super(E, F).test_message()
+        super().test_message()
         # self.test_message()
 
 
